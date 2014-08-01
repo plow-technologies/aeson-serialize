@@ -16,6 +16,8 @@ Library
   Exposed-Modules:      Data.Aeson.Serialize
   Other-Modules:        Data.Aeson.Serialize.Internal
   Build-Depends:        base >= 4 && < 5
+                      , aeson
+                      , cereal
 
 Test-Suite spec
   Type:                 exitcode-stdio-1.0
