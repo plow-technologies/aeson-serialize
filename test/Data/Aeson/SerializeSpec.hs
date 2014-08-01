@@ -26,7 +26,7 @@ spec = do
           encoded = encode d
           (Right decoded) = decode encoded :: Either String (TestingData (TestingData (TestingData (Maybe Int) (Either (Either () (Maybe (Either () [Char]))) ()))  (TestingData  (TestingData (Maybe ()) [Char]) (TestingData [Char] (Maybe (Either (Either () [Char]) ()))))) [Char])
       print . encode $ decoded
-      assertBool "Something" False
+      decoded `shouldBe` d
 
 newtype IntWrapper = IntWrapper { unIntWrapper :: Int } deriving (Eq, Show, Generic)
 
