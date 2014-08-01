@@ -28,6 +28,9 @@ Test-Suite spec
   Main-Is:              Spec.hs
   Build-Depends:        base
                       , hspec
+                      , aeson
+                      , cereal
+                      , HUnit
 
 Source-Repository head
   Type:                 git
