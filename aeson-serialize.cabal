@@ -4,8 +4,12 @@ Author:                 Kevin Cotrone <kevincotrone@gmail.com>
 Maintainer:             Kevin Cotrone <kevincotrone@gmail.com>
 License:                BSD3
 License-File:           LICENSE
--- Synopsis:               
--- Description:            
+Synopsis:               Simple serialization functions for aeson types
+Description:            Serialize a type using json instances
+                          
+
+
+                        The intended use is to define an instance of Serialize where get and put are putToJSON and getFromJSON respectively
 Cabal-Version:          >= 1.10
 Build-Type:             Simple
 
@@ -34,4 +38,4 @@ Test-Suite spec
 
 Source-Repository head
   Type:                 git
---  Location:             
+  Location:             git@github.com:plow-technologies/aeson-serialize.git
